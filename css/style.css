@@ -62,6 +62,7 @@ body{
     }
     .nav__bar:hover{
         color: white;
+        font-weight: bold;
     }
     .header__box:hover{
         background-color: rgb(8, 33, 8);
