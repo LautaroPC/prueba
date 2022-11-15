@@ -14,51 +14,53 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     </head>   
     <body>
-        <header>
+        <div>
             <img src="../img/shelter.png" class="header__logo" alt="img">
+        </div>
+        <header class="sticky-top">
+            <nav class="header__nav py-2 my-2">
+                <ul class="my-0">
+                    <div class="header__box flex-fill">
+                        <li>
+                            <a href="../index.html" class="nav__bar text-decoration-none"> Inicio </a>
+                        </li>
+                    </div>
+                    <div class="header__box flex-fill">
+                        <li>
+                            <a href="adoption.html" class="nav__bar text-decoration-none"> Adopcion </a>
+                        </li>
+                    </div>
+                    <div class="header__box flex-fill">
+                        <li>
+                            <a href="donation.html" class="nav__bar text-decoration-none"> Donacion </a>
+                        </li>
+                    </div>
+                    <div class="header__box flex-fill">
+                        <li>
+                            <a href="visit.html" class="nav__bar text-decoration-none"> Visitar </a>
+                        </li>
+                    </div>
+                    <div class="header__box flex-fill">
+                        <li>
+                            <a href="contact.html" class="nav__bar text-decoration-none"> Contacto </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>  
         </header>
-        <nav class="header__nav py-2 my-2 sticky-top">
-            <ul class="my-0">
-                <div class="header__box flex-fill">
-                    <li>
-                        <a href="../index.html" class="nav__bar text-decoration-none"> Inicio </a>
-                    </li>
-                  </div>
-                  <div class="header__box flex-fill">
-                    <li>
-                        <a href="adoption.html" class="nav__bar text-decoration-none"> Adopcion </a>
-                    </li>
-                  </div>
-                  <div class="header__box flex-fill">
-                    <li>
-                        <a href="donation.html" class="nav__bar text-decoration-none"> Donacion </a>
-                    </li>
-                  </div>
-                  <div class="header__box flex-fill"> 
-                    <li>
-                        <a href="visit.html" class="nav__bar text-decoration-none"> Visitar </a>
-                    </li>
-                  </div>
-                  <div class="header__box flex-fill">
-                    <li>
-                        <a href="contact.html" class="nav__bar text-decoration-none"> Contacto </a>
-                    </li>
-                  </div>
-            </ul>
-        </nav>
         <main>
             <h1 class="fw-bold pt-4 pb-2">¿Quieres contactarnos?</h1>
                 <p>Por favor, rellene los campos con sus datos personales, dejando su mensaje a continuación. Para ello elija previamente un "asunto" según su consulta.</p>
-                <p class="fw-bold main__p mb-0">TODOS LOS DATOS SON OBLIGATORIOS.</p>
+                <p class="fw-bold main__p mb-0 fs-4">TODOS LOS DATOS SON OBLIGATORIOS.</p>
             <form action="" method=""enctype="">
                 <fieldset>
-                    <h4 class="full-name py-2 fw-bold">Nombre y Apellido*</h4>
+                    <h4 class="full-name pt-2 pb-3 fw-bold">Nombre y Apellido*</h4>
                     <input type="text" name="full-name" placeholder="Nombre y apellido">
-                    <h4 class="phone py-2 fw-bold">Telefono*</h4>
+                    <h4 class="phone py-3 fw-bold">Telefono*</h4>
                     <input type="text" name="phone" placeholder="Telefono">
-                    <h4 class="e-mail py-2 fw-bold">E-mail*</h4>
+                    <h4 class="e-mail py-3 fw-bold">E-mail*</h4>
                     <input type="text" name="e-mail" placeholder="E-mail">
-                    <h4 class="affair py-2 fw-bold">Asunto*</h4>
+                    <h4 class="affair py-3 fw-bold">Asunto*</h4>
                     <select name="affair" id="affair">
                         <option value=" " disabled selected>Asunto</option>
                         <option value="adoption">Adopcion</option>
@@ -66,11 +68,11 @@
                         <option value="visit">Visita</option>
                         <option value="other">Otro</option>
                     </select>
-                    <h4 class="comment py-2 fw-bold">Consultar*</h4>
+                    <h4 class="comment py-3 fw-bold">Consultar*</h4>
                     <textarea name="comment" id="letra" cols="45" rows="5" placeholder="Escribí aquí tu consulta"></textarea>
                 </fieldset>
-                <button type="submit" class="btn btn-danger mx-3 mt-2 fs-6 rounded-4">Enviar</button>
-                <button type="reset" class="btn btn-danger mx-3 mt-2 fs-6 rounded-4">Borrar</button>
+                <button type="submit" class="btn btn-danger mx-3 my-2 py-2 fs-6 rounded-4">Enviar</button>
+                <button type="reset" class="btn btn-danger mx-3 my-2 py-2 fs-6 rounded-4">Borrar</button>
             </form>     
         </main>
         <footer>  

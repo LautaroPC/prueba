@@ -87,6 +87,8 @@ body{
         background-position:center;
         font-size: 50px;
         color:rgba(248, 97, 63, 0.945);
+        margin: 20px 0px;
+        padding: 20px 0px 10px 0px;
     }
     h2{
         margin: 0 5%;
@@ -299,17 +301,20 @@ body{
             padding-left: 2%;
         }
         .main__bank li{
-            padding-left: 2%;
-            margin: 5% 0% 
+            padding: 3px 3px 3px 0px;
+            margin: 5% 0%; 
         }
         .main__bank ul{
             padding:0%;
-            margin:0%
+            margin:0%;
         }
         /* tamaño, color de las letras en titulos y parrafos*/
         h1{
             font-size: 22px;
-            margin-top: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-bottom: 0;
         }
         h2{
             margin: 0px 25px;
